@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crimson+Text:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');
+
+
+/*resetting css*/
+/* variables.css */
+:root {
+    /* colors */
+    --primary-dark-color: #F3D0D7;
+    --primary-color: #FFEFEF;
+    --primary-grayish-color: #00000014;
+    --accent-color: hwb(314 14% 15% / 0.504);
+    --text-color: #fbfafc;
+    --text-dark-color: #4c3651;
+    --background-color: ##F7E7DC;
+    /* fonts */
+    --font-family: "Crimson Text", serif;
+    --font-family-sub: "Abril Fatface", serif;
+    --base-font-size: 16px;
+    --min-font-size: 10px;
+    --border-big-radius: 32px;
+    --border-radius: 20px;
+
+    /*animation*/
+    --transition: .3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+body {
+    font-family: var(--font-family);
+    text-align: left;
+    font-size: clamp(var(--min-font-size), 2vw, var(--base-font-size));
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: clamp(1rem, 2vw, 2rem);
+}
+
+header {
+    max-height: 128px;
+}
+header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--text-dark-color);
+    background-color: var(--primary-color);
+    border-radius: var(--border-big-radius);
+    text-align: center;
+    padding: clamp(0.6rem, 2vw, 1.3rem);
+}
+
+button, Tag {
+    display: flex;
+    align-items: center;
+    gap: clamp(4px, 2vw, 8px);
+    border: none;
+    background-color: transparent;
+    font-family: var(--font-family-sub);
+    font-size: clamp(12px, 2vw, 14px);
+    line-height: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    
+}
+
+li {
+    list-style-type: none;
+}

@@ -1,0 +1,25 @@
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent-color);
+    border-radius: var(--border-big-radius);
+    padding: clamp(0.5rem, 2vw, 1.5rem);
+    max-height: 75px;
+}
+button {
+    color: var(--text-color);
+        &:hover {
+        color: var(--text-dark-color);
+        border-radius: var(--border-radius);
+        justify-content: space-between;
+        letter-spacing: 0.15rem;
+
+    }
+
+}
+
+@media (max-width:600px) {
+    button {
+        letter-spacing: normal;
+    }
+}

@@ -1,0 +1,23 @@
+.bookListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--border-radius);
+    padding: clamp(1rem, 2vw, 2rem);
+    background-color: var(--primary-grayish-color);
+    border-radius: var(--border-radius);
+
+}
+.bookList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--border-radius);
+    max-height: 946px;
+}
+
+.total {
+    font-size: var(--border-radius);
+    font-weight: 900;
+    color: var(--text-dark-color);
+}
+

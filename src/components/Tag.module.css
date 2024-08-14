@@ -1,0 +1,14 @@
+.tag {
+    color: var(--text-dark-color);
+    background-color: var(--text-color);
+    border-radius: var(--border-radius);
+    padding: clamp(0.25rem, 2vw, 0.6rem);
+    max-height: 35px;
+    max-width: fit-content;
+    font-size: var(--min-font-size);
+    transition: var(--transition);
+    &:hover {
+        background-color: var(--primary-dark-color);
+        color: var(--text-color);
+    }
+}
