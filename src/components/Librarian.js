@@ -1,16 +1,13 @@
 import React from "react";
 import styles from './Librarian.module.css';
 import BookList from './BookList';
-import Sorting from "./Sorting";
 
 const Librarian = () => {
     return (
-        <div className={styles.app}>
+        <div className={styles.librarian}>
             <header>
-                <h1>Librarian</h1>
+                <h1>l i b r a r i a n</h1>
             </header>
-            <Sorting/>
-
             <BookList/>
         </div>
     )

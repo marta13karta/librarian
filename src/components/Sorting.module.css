@@ -1,25 +1,63 @@
 .sorting {
     display: flex;
     justify-content: space-between;
+    position: relative;
     background-color: var(--accent-color);
     border-radius: var(--border-big-radius);
-    padding: clamp(0.5rem, 2vw, 1.5rem);
+    padding: clamp(0.8rem, 2vw, 1.5rem);
     max-height: 75px;
+    min-height: 25px;
 }
+
 button {
     color: var(--text-color);
         &:hover {
         color: var(--text-dark-color);
         border-radius: var(--border-radius);
         justify-content: space-between;
-        letter-spacing: 0.15rem;
-
+        letter-spacing: 0.10rem;
     }
 
 }
 
+.tagsContainer {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    .tags {
+        display: flex;
+        gap: 10px;
+}
+    .showTags {
+        display: none;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-template-rows: repeat(3, auto);
+        position: absolute;
+        top: 2.3rem;
+        left: -1.3rem;
+        background-color: var(--primary-grayish-color);
+        max-height: 120px;
+        border-radius: var(--border-big-radius);
+        padding: 0.5rem;
+        overflow: hidden;
+    }
+}
+
 @media (max-width:600px) {
+    .sorting {
+        max-width: 100%;
+    }
     button {
         letter-spacing: normal;
+    }
+    .showTags {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width:370px) {
+    button svg{
+        display: none;
     }
 }

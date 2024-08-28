@@ -2,11 +2,12 @@
     color: var(--text-dark-color);
     background-color: var(--text-color);
     border-radius: var(--border-radius);
-    padding: clamp(0.25rem, 2vw, 0.6rem);
+    padding: clamp(0.25rem, 2vw, 0.55rem);
     max-height: 35px;
-    max-width: fit-content;
+    width: auto;
     font-size: var(--min-font-size);
     transition: var(--transition);
+    text-align: center;
     &:hover {
         background-color: var(--primary-dark-color);
         color: var(--text-color);

@@ -5,25 +5,25 @@
     font-size: var(--min-font-size);
     text-align: left;
     background-color: var(--primary-dark-color);
-    padding: clamp(0.6rem, 2vw,1rem);
+    padding: clamp(0.6rem, 2vw,0.8rem);
     border-radius: var(--border-radius);
     max-height: 205px;
     max-width: 436px;
-
-
 } 
 .number {
     font-weight: 400;
     margin-right: 3px;
 }
 .title {
-font-size: 16px;
+font-size: clamp(14px, 2vw, var(--base-font-size));
 font-weight: 900;
 line-height: 19.36px;
 color: var(--text-dark-color);
 }
 .info {
     line-height: 0.9rem;
+    color: var(--text-dark-color);
+    font-size: clamp(var(--min-font-size), 2vw, 14px);
 }
 hr {
     border: 1px solid var(--accent-color);
@@ -34,5 +34,5 @@ hr {
 
 .tags {
     display: flex;
-    gap: clamp(0.8rem, 2vw, 1.5rem);
+    gap: clamp(0.8rem, 2vw, 1rem);
 }
